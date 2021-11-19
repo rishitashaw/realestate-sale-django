@@ -1,9 +1,12 @@
 {% extends "base.html"%}
+{% load static %}
+
 
 {% block content %}
 
+
 <!-- Showcase -->
-<section id="showcase">
+<section id="showcase" style="background-image: url('{% static "img/showcase.jpg" %}')">
     <div class="container text-center">
         <div class="home-search p-5">
             <div class="overlay p-5">
@@ -288,7 +291,8 @@
     </div>
 </section>
 
-<section id="services" class="py-5 bg-secondary text-white">
+<section id="services" class="py-5 bg-secondary text-white"
+    style="background-image: url('{% static "img/building.jpg" %}')">
     <div class="container">
         <div class="row text-center">
             <div class="col-md-4">
