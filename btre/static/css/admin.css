@@ -1,0 +1,70 @@
+*{
+    background: #fff;
+    
+}
+#header{
+    height:50px;
+}
+
+button,
+#user-tools,
+#user-tools strong,
+#user-tools a,
+#header,
+#branding,
+#branding h1 img,
+#branding h1{
+    color: #fff;
+    background: #10284e ;
+
+}
+
+a:link, a:visited{
+    color: #333;
+}
+
+div .breadcrumbs, 
+div .breadcrumbs a{
+
+    background: #30caa0;
+}
+
+div .breadcrumbs a{
+    color: #333;
+}
+
+
+.app-realtors table caption,
+.app-auth table caption,
+.app-listing table caption {
+    background: #30caa0;
+    color: #333;
+}
+
+.module table caption .section{
+    background: #30caa0;
+    color: #333;
+}
+#content-related{
+    background: #e3e3e3;
+}
+
+h1, h2, h3, h4, h5, h6, span, label, p{
+    color: #333 !important;
+}
+
+textarea,
+input,
+div .submit-row,
+.sticky,
+#nav-sidebar{
+    background: #fff !important;
+    color: #333 !important;
+}
+
+select,
+.paginator,
+div .actions{
+    background: #fff !important;
+    color: #333 !important;
+}
