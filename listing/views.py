@@ -1,7 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from .models import Listing
-from realtors.models import Realtor
 # Create your views here.
 
 
@@ -12,14 +11,15 @@ def index(request):
     page = request.GET.get('page')
     paged_listings = paginator.get_page(page)
     context = {
-        'listings': paged_listings
+        'listings': paged_listings,
+
     }
 
     return render(request, 'listing/listings.html', context)
 
 
 def listing(request, listing_id):
-    listing = Listing.objects.get(id=listing_id)
+    listing = get_object_or_404(Listing, pk=listing_id)
     context = {
         'listing': listing,
 
