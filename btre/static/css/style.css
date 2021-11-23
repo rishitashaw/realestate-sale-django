@@ -36,7 +36,7 @@ img {
     background: rgba(51, 51, 51, 0.8); }
 
 #services {
-  background: url(static/img/building.jpg) no-repeat top center fixed/cover;
+  background-img: url("https://wallpaperaccess.com/full/153056.jpg") no-repeat top center fixed/cover;
   min-height: 300px;
   position: relative;
   overflow: hidden; }
@@ -50,7 +50,7 @@ img {
     background: rgba(32, 134, 107, 0.8); }
 
 #showcase-inner {
-  background: url(static/img/building.jpg) no-repeat top center fixed/cover;
+  background-img: url("https://wallpaperaccess.com/full/153056.jpg") no-repeat top center fixed/cover;
   position: relative;
   overflow: hidden;
   min-height: 200px; }

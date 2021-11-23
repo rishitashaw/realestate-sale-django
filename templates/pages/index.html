@@ -4,9 +4,9 @@
 
 {% block content %}
 
-
 <!-- Showcase -->
 <section id="showcase" style="background-image: url('{% static "img/showcase.jpg" %}')">
+
     <div class="container text-center">
         <div class="home-search p-5">
             <div class="overlay p-5">
@@ -18,7 +18,9 @@
                     eveniet vel nostrum magnam
                     voluptatum tempore! Consectetur, id commodi!</p>
                 <div class="search">
-                    <form action="search.html">
+                    <form action="{% url 'search' %}">
+                        {% csrf_token %}
+
                         <!-- Form Row 1 -->
                         <div class="form-row">
                             <div class="col-md-4 mb-3">
@@ -136,8 +138,7 @@
     </div>
 </section>
 
-<section id="services" class="py-5 bg-secondary text-white" style="background-image: url("
-    {% static 'img/building.jpg' %}")">
+<section id="services" class="py-5 bg-secondary text-white">
     <div class="container">
         <div class="row text-center">
             <div class="col-md-4">
